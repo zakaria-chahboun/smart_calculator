@@ -16,14 +16,13 @@ $ <b>88 + 10 -15 * 20 * 3 / 10 / 2 - 45</b>
 
 The result :
 
-$ <b>------</b>
+--------
 
-$ <b>8.0</b>
+8.0
 
-$ <b>------</b>
+--------
 
-
-![Screenshot](screen_shot.png)
+![Screenshot](https://github.com/zakaria-chahboun/smart_calculator/blob/master/screen_shot.PNG?raw=true)
 
 
 
@@ -73,5 +72,6 @@ This is the order it goes in :
 
 
 
-
+-----------------------------
 :: zakaria chahboun | 2017 ::
+-----------------------------
