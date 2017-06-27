@@ -43,9 +43,9 @@ $ : end of expression
 
 ? : 1 time or not
 
-* : 0 or more times
+\* : 0 or more times
 
-+ : 1 or more times
+\+ : 1 or more times
 
 <em> for more informations about Regex, visit </em> <a href='https://en.wikipedia.org/wiki/Regular_expression#Standards'>wiki regex</a>
 
