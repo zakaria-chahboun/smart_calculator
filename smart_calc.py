@@ -49,11 +49,11 @@ def main():
 				All.insert(i-1,add)
 
 			elif All[i] == '-':
-				add = float(All[i-1])-float(All[i+1])
+				sub = float(All[i-1])-float(All[i+1])
 				del All[i-1]
 				del All[i-1]
 				del All[i-1]
-				All.insert(i-1,add)
+				All.insert(i-1,sub)
 
 
 		#---- The Result ----
