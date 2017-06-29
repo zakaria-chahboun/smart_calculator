@@ -35,7 +35,7 @@ i used Regex <em>(Regular Expression)</em> :
 
 $ : end of expression
 
-[-+*/] : '-' or '+' or '*' or '/'
+[-+\*/] : '-' or '+' or '\*' or '/'
 
 [0-9] : 1 2 3 ... 9
 
