@@ -11,10 +11,14 @@ def main():
 	Input = raw_input() # String
 
 	#---- validate mathematical expressions ----
-	if re.search('^\s*([0-9]+)(?:\s*([-+*/])\s*((?:\s[-+])?[0-9]+)\s*)+$',Input):
+	if re.search('^\s*([-+])?([0-9]+)(?:\s*([-+*/])\s*((?:\s[-+])?[0-9]+)\s*)+$',Input):
 
 		# return a list of operations, for example : ['10','+','4','/','8']
 		All = re.findall("[-*/+]+|[0-9]+", Input)
+
+		# signed numbers like : -10 + 12 or +10 + 12
+		if All[0] == '+' or All[0] == '-':
+			All.insert(0,0) # Insert '0' in the begin of list operations
 
 		#---- Division ----
 		while '/' in All:
@@ -49,11 +53,11 @@ def main():
 				All.insert(i-1,add)
 
 			elif All[i] == '-':
-				add = float(All[i-1])-float(All[i+1])
+				sub = float(All[i-1])-float(All[i+1])
 				del All[i-1]
 				del All[i-1]
 				del All[i-1]
-				All.insert(i-1,add)
+				All.insert(i-1,sub)
 
 
 		#---- The Result ----
